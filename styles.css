@@ -1,0 +1,216 @@
+:root {
+    --primary-color: #aa4a4c;
+    --secondary-color: rgba(131, 59, 60, 255);
+    --background-color: rgba(255, 255, 255, 0.9);
+    --border-color: #aa4a4c;
+    --text-color: #000000;
+    --hover-color: #cc5c5e;
+}
+.contact-container {
+    display: flex; 
+    align-items: flex-start; 
+    max-width: 800px; 
+    margin: 20px auto; 
+}
+
+.logo {
+    max-width: 100px; 
+    margin-right: 40px; 
+}
+
+.contact-form {
+    flex: 1; /* Prendre tout l'espace restant */
+}
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: var(--text-color);
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+video#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Style uniforme pour le menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+nav .left,
+nav .right {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--hover-color);
+    background-color: rgba(200, 200, 200, 0.5);
+    border-color: var(--hover-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Titres */
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style des blocs */
+.about-content {
+    background-color: var(--background-color);
+    padding: 20px;
+    margin: auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Image pour l'histoire */
+.about-content img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Tableau des personnages */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 2px solid var(--primary-color);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+tr:hover {
+    background-color: rgba(200, 200, 200, 0.7);
+    cursor: pointer;
+}
+
+/* Formulaire de contact */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+.info-contact {
+    text-align: center;
+    margin-top: 20px;
+}
+.character-card {
+    width: 800px;
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    color: #fff;
+}
+.character-card img {
+    max-width: 300px;
+}
+.character-info {
+    flex: 1;
+}
+.character-info h1 {
+    color: #e00;
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+.character-info p {
+    margin: 5px 0;
+}
+.character-info .description {
+    margin-top: 10px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 4px;
+}
