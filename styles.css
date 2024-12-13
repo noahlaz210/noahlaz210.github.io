@@ -1,11 +1,12 @@
 :root {
     --primary-color: #aa4a4c;
     --secondary-color: rgba(131, 59, 60, 255);
-    --background-color: rgba(255, 255, 255, 0.9);
+    --background-color: #000000; /* Changement ici */
     --border-color: #aa4a4c;
-    --text-color: #000000;
+    --text-color: #ffffff; /* Ajustement pour contraste */
     --hover-color: #cc5c5e;
 }
+
 .contact-container {
     display: flex; 
     align-items: flex-start; 
@@ -19,8 +20,9 @@
 }
 
 .contact-form {
-    flex: 1; /* Prendre tout l'espace restant */
+    flex: 1;
 }
+
 body {
     font-family: 'Verdana', sans-serif;
     margin: 0;
@@ -41,7 +43,6 @@ video#background-video {
     z-index: -1;
 }
 
-/* Style uniforme pour le menu */
 nav {
     display: flex;
     justify-content: space-between;
@@ -73,16 +74,15 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Titres */
 h1 {
     color: var(--primary-color);
     text-align: center;
     margin: 20px 0;
 }
 
-/* Style des blocs */
 .about-content {
-    background-color: var(--background-color);
+    background-color: var(--background-color); /* Changement ici */
+    color: var(--text-color); /* Ajustement pour le texte */
     padding: 20px;
     margin: auto;
     max-width: 900px;
@@ -91,7 +91,6 @@ h1 {
     position: relative;
 }
 
-/* Image pour l'histoire */
 .about-content img {
     width: 100%;
     height: auto;
@@ -102,7 +101,6 @@ h1 {
     margin-top: 20px;
 }
 
-/* Tableau des personnages */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -124,19 +122,19 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: rgba(240, 240, 240, 0.8);
+    background-color: rgba(40, 40, 40, 0.8); /* Assombri pour s'accorder au fond noir */
 }
 
 tr:hover {
-    background-color: rgba(200, 200, 200, 0.7);
+    background-color: rgba(60, 60, 60, 0.7);
     cursor: pointer;
 }
 
-/* Formulaire de contact */
 .contact-form {
     max-width: 600px;
     margin: auto;
-    background-color: var(--background-color);
+    background-color: var(--background-color); /* Changement ici */
+    color: var(--text-color); /* Contraste */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -149,6 +147,7 @@ tr:hover {
 label {
     display: block;
     margin-bottom: 5px;
+    color: var(--text-color); /* Contraste */
 }
 
 input,
@@ -158,6 +157,8 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #222; /* Fond sombre */
+    color: #fff; /* Texte clair */
 }
 
 textarea {
@@ -182,6 +183,7 @@ button:hover {
     text-align: center;
     margin-top: 20px;
 }
+
 .character-card {
     width: 800px;
     background-color: #2b2b2b;
@@ -194,23 +196,29 @@ button:hover {
     gap: 20px;
     color: #fff;
 }
+
 .character-card img {
     max-width: 300px;
 }
+
 .character-info {
     flex: 1;
 }
+
 .character-info h1 {
     color: #e00;
     font-size: 24px;
     margin: 0 0 10px;
 }
+
 .character-info p {
     margin: 5px 0;
 }
+
 .character-info .description {
     margin-top: 10px;
-    background-color: #222;
+    background-color: #222; /* Fond sombre */
     padding: 10px;
     border-radius: 4px;
+    color: #fff;
 }
