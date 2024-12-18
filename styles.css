@@ -1,9 +1,9 @@
 :root {
     --primary-color: #aa4a4c;
     --secondary-color: rgba(131, 59, 60, 255);
-    --background-color: #000000; /* Changement ici */
+    --background-color: #000000;
     --border-color: #aa4a4c;
-    --text-color: #ffffff; /* Ajustement pour contraste */
+    --text-color: #ffffff;
     --hover-color: #cc5c5e;
 }
 
@@ -81,8 +81,8 @@ h1 {
 }
 
 .about-content {
-    background-color: var(--background-color); /* Changement ici */
-    color: var(--text-color); /* Ajustement pour le texte */
+    background-color: var(--background-color); 
+    color: var(--text-color); 
     padding: 20px;
     margin: auto;
     max-width: 900px;
@@ -122,7 +122,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: rgba(40, 40, 40, 0.8); /* Assombri pour s'accorder au fond noir */
+    background-color: rgba(40, 40, 40, 0.8); 
 }
 
 tr:hover {
@@ -133,8 +133,8 @@ tr:hover {
 .contact-form {
     max-width: 600px;
     margin: auto;
-    background-color: var(--background-color); /* Changement ici */
-    color: var(--text-color); /* Contraste */
+    background-color: var(--background-color); 
+    color: var(--text-color); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -147,8 +147,7 @@ tr:hover {
 label {
     display: block;
     margin-bottom: 5px;
-    color: var(--text-color); /* Contraste */
-}
+    color: var(--text-color);
 
 input,
 textarea {
@@ -157,9 +156,8 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    background-color: #222; /* Fond sombre */
-    color: #fff; /* Texte clair */
-}
+    background-color: #222;
+    color: #fff;
 
 textarea {
     resize: vertical;
